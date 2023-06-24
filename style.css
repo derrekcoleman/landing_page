@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.header-links {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-container {
+  background-color: #1f2937;
+  display: flex;
+  padding: 80px 0;
+}
+
+.hero-secondary {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 8px;
+}
+
+.hero-main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  margin: 8px;
+}
+
+.hero-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 10px;
+  border: 0;
+  padding: 8px 25px;
+  margin: 8px;
+}
+
+.information-section {
+  padding: 80px 0 160px;
+}
+
+.information-header {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  width: min-content;
+}
+
+.square {
+  height: 160px;
+  width: 160px;
+  border: #3882f6 2px;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+.quote-container {
+  background-color: #e5e7eb;
+  padding: 100px;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.quote-attribution {
+  text-align: end;
+  padding-right: 50px;
+  font-weight: 700;
+}
+
+.cta-box {
+  background-color: #3882f6;
+  color: #f9faf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 200px;
+  margin: 100px 0;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 10px;
+  border: #f9faf8;
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px 25px;
+  margin: 8px;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 32px;
+  font-size: 14px;
+}
