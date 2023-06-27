@@ -11,6 +11,7 @@ function game() {
     } else {
       computerChoice = 'scissors'
     }
+    console.log(`Computer choice is ${computerChoice}`)
     return computerChoice
   }
   let computerSelection = generateComputerChoice()
@@ -18,7 +19,8 @@ function game() {
   // Prompt the user for a choice
   function acquireUserChoice() {
     let userChoice = prompt(`Do you pick Rock, Scissors, or Paper?`)
-    userChoiceLowerCase = userChoice.toLowerCase
+    let userChoiceLowerCase = userChoice.toLowerCase()
+    console.log(`User choice is ${userChoiceLowerCase}`)
     return userChoiceLowerCase
   }
   let playerSelection = acquireUserChoice()
@@ -28,7 +30,7 @@ function game() {
     let winner
     // If same choice, tie
     if (playerSelection == computerSelection) {
-      winner = 'none'
+      return (winner = 'none')
     }
     // If player wins, set winner to 'player'
     else if (
@@ -47,6 +49,8 @@ function game() {
       return (winner = 'computer')
     }
     // Handle all other cases
+    console.warn(`playerSelection is ${playerSelection}`)
+    console.warn(`computerSelection is ${computerSelection}`)
     return console.error('A bug or edge case happened in playRound')
   }
 
